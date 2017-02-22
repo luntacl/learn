@@ -1,5 +1,6 @@
-package com.liutao.proxy;
+package com.liutao.proxy.jdk;
 
+import com.liutao.proxy.HelloWrold;
 import com.liutao.proxy.impl.HelloworldImpl;
 
 import java.lang.reflect.Constructor;
