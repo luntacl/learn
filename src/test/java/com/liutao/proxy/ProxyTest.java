@@ -6,6 +6,7 @@ import com.liutao.proxy.impl.BookFacadeImpl;
 import org.junit.Test;
 
 /**
+ * 详见：http://www.cnblogs.com/jqyp/archive/2010/08/20/1805041.html
  * Created by liutao on 17-2-22.
  */
 public class ProxyTest {
