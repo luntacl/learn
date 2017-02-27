@@ -11,7 +11,10 @@ public class SortTest {
     @Test
     public void test() {
         int array[] = {4,2,21,34,1,5,7};
-        Sort.shellSort(array);
+//        Sort.shellSort(array);
+//        Sort.selectionSort(array);
+//        Sort.bubbleSort(array);
+        Sort.quickSort(array,0,array.length);
         for (int i= 0;i<array.length;i++) {
             System.out.print(array[i]+"  ");
         }

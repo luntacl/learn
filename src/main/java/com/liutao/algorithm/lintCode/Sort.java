@@ -64,4 +64,44 @@ public class Sort {
         }
     }
 
+    /**
+     * 冒泡排序
+     * @param a
+     */
+    public static void bubbleSort(int a[]) {
+        for (int i=0;i<a.length;i++) {
+            for (int j=i;j<a.length;j++) {
+                if (a[i] > a[j]) {
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+    }
+
+    public static void quickSort(int a[], int left, int right) {
+        if (left < right) {
+            int temp = a[left];
+            int i = left, j = right;
+            while (i < j) {
+                while (i < j && a[j] > temp) {
+                    j--;
+                }
+                if (i < j) {
+                    a[i++] = a[j];
+                }
+                while (i < j && a[i] < temp) {
+                    i++;
+                }
+                if (i < j) {
+                    a[j--]=a[i];
+                }
+                a[i] = temp;
+                quickSort(a,left,i-1);
+                quickSort(a,i+1,right);
+            }
+        }
+    }
+
 }
