@@ -29,4 +29,19 @@ public class CharSort {
         }
         return String.valueOf(zimu);
     }
+
+    public static String StrSort2(String str) {
+        char[] chars = str.toCharArray();
+        int length =chars.length;
+        StringBuffer num = new StringBuffer();
+        StringBuffer noNum = new StringBuffer();
+        for (int i=0;i<length;i++) {
+            if (Character.isDigit(chars[i])) {
+                num.append(chars[i]);
+            } else {
+                noNum.append(chars[i]);
+            }
+        }
+        return noNum.append(num).toString();
+    }
 }
