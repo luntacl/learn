@@ -27,4 +27,11 @@ public class Equals {
         str2 = str;
         System.out.println(str1 == str2);
     }
+
+    @Test
+    public void test2() {
+        byte[] bytes = new byte[4];
+        String s = new String(bytes);
+
+    }
 }
