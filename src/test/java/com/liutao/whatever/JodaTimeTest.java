@@ -1,5 +1,6 @@
 package com.liutao.whatever;
 
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.junit.Test;
 
@@ -17,6 +18,7 @@ public class JodaTimeTest {
         System.out.println(time.toDate());
         DateTime.Property property = DateTime.now().millisOfDay();
         System.out.println(property.get());
-
+        boolean blank = StringUtils.isNotEmpty("  ");
+        System.out.println(blank);
     }
 }
