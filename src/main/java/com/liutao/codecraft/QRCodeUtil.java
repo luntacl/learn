@@ -1,4 +1,4 @@
-package us.codecraft;
+package com.liutao.codecraft;
 
 import java.awt.BasicStroke;
 import java.awt.Graphics;
