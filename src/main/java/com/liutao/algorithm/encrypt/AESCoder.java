@@ -106,7 +106,8 @@ public class AESCoder {
         System.out.println();
         byte[] encryptData = encrypt(data.getBytes(), k);//数据加密
         System.out.println("加密后数据: byte[]:" + showByteArray(encryptData));
-//       System.out.println("加密后数据: hexStr:"+Hex.encodeHexStr(encryptData));
+        System.out.println("加密后数据: byte[]:" + new String( showByteArray(encryptData)));
+//        System.out.println("加密后数据: hexStr:"+ Hex.encodeHexStr(encryptData));
         System.out.println();
         byte[] decryptData = decrypt(encryptData, k);//数据解密
         System.out.println("解密后数据: byte[]:" + showByteArray(decryptData));

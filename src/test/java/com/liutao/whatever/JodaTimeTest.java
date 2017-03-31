@@ -16,9 +16,7 @@ public class JodaTimeTest {
 //        String timeStr = "2016-03-30 17:53:23";
         System.out.println(time.toString("yyyy-MM-dd HH:mm:ss"));
         System.out.println(time.toDate());
-        DateTime.Property property = DateTime.now().millisOfDay();
-        System.out.println(property.get());
-        boolean blank = StringUtils.isNotEmpty("  ");
+        boolean blank = StringUtils.isBlank(" e ");
         System.out.println(blank);
     }
 }
